@@ -1,0 +1,83 @@
+{
+  "name": "in-quiter",
+  "version": "1.0.0",
+  "description": "API de integracion con QUITER",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc -p .",
+    "lint": "eslint . --ext .ts",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/developersautocity/in-quiter.git"
+  },
+  "author": "Ithreex Global",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/developersautocity/in-quiter#readme",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.3",
+    "axios": "^0.23.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "express-session": "^1.17.2",
+    "flatted": "^3.2.4",
+    "fxparser": "^1.0.1",
+    "jsdom": "^19.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.3.0",
+    "minimist": "^1.2.5",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.7",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3-rc.0",
+    "node-rsa": "^1.1.1",
+    "os": "^0.1.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0",
+    "utf8": "^3.0.0",
+    "xml": "^1.0.1",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/jsdom": "^16.2.14",
+    "@types/jsonwebtoken": "^8.5.6",
+    "@types/minimist": "^1.2.2",
+    "@types/mysql2": "github:types/mysql2",
+    "@types/node": "^16.11.1",
+    "@types/xml": "^1.0.7",
+    "@types/xml2js": "^0.4.9",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^8.0.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
